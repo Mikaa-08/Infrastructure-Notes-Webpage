@@ -25,6 +25,10 @@ h1{
     margin-bottom: 0%;
 }
 
+h2{
+    font-size: 30px;
+}
+
 
 .navBar{
     display: grid;
@@ -82,9 +86,13 @@ main article {
     flex: 1; 
     min-width: 250px; 
     padding: 10px;
-    border: 1px black solid;
+    border: 2px black solid;
     border-radius: 8px;
     font-size: 24px;
+}
+
+.topMargin{
+    margin-top: 20px;
 }
 
 .image{

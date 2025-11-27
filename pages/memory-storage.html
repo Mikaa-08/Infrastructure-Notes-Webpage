@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <link href="../style/webpage-style.css" rel="stylesheet">
+        <title>My Notes on Computer Parts</title>
+    </head>
+
+<body>
+    <header><h1>Computer Parts</h1></header>
+        
+    <nav class="navBar">
+        <a href="../index.html" class="homePage">Home Page</a>
+        <div class="otherLinks">
+            <a href="computer-definition.html">Definition of a Computer</a>
+            <a href="file-organisation.html">File Organization</a>
+            <a href="search-engines.html">Web Search Engines</a>
+            <a href="boolean-logic.html">Boolean Logic</a>
+            <a href="numbering-systems.html">Numbering Systems</a>
+            <a href="processors.html">Processors</a>
+            <a href="">Memory and storage</a>
+            <a href="bios-uefi.html">System Integration & Startup</a>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h2>What is Memory(RAM)?</h2>
+            <ul>
+                <li>Volatile information, means it's lost if power is turned off</li>
+                <li>Used by every program to store temporary information</li>
+                <li>2 main types of RAM
+                    <ol>
+                        <li>DRAM (Dynamic RAM): 
+                            <ul>
+                                <li>Has to be refreshed thousands of times per second</li>
+                                <li>Slower but cheaper, it's used for the main memory in your system</li>
+                            </ul>
+                        </li>
+
+                        <li>SRAM (Static RAM):
+                            <ul>
+                                <li>Super fast so it doesn't need any refreshing</li>
+                                <li>More expensive, so it's used in chache memory inside the CPU</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>Speed of Memory is represented in MHz (Refreshes per second), while capacity is measured in GB</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>ROM (Read-Only Memory)</h2>
+            <ul>
+                <li>Is not volatile</li>
+                <li>Stores permanenet instructions for the boot process (Firmware)</li>
+                <li>Motherboards and other devices use ROM for simple instructions</li>
+                <li>Usually uses Flash Memory</li>
+            </ul>
+            
+            <h2 class="topMargin">Physical RAM types</h2>
+            <ol>
+                <li>SIMM:
+                    <ul>
+                        <li>Used in old computers, has one single sided connection (pins)</li>
+                    </ul>
+                </li>
+                <li>DIMM: 
+                    <ul>
+                        <li>Used in newer computers, has double sided connection</li>
+                    </ul>
+                </li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>RAM terms</h2>
+            <ul>
+                <li>SDRAM, sychronises with the system clock to make transfers (Used in DDR RAM)</li>
+                <li>DDR (Double Data Rate), transfers data twice per clock cycle
+                    <ul>
+                        <li>Generations: DDR1; DDR2; DDR3; DDR4; DDR5 (Can't mix generations, only use the one the motherboard supports)</li>
+                    </ul>
+                </li>
+                <li>PC Number:
+                    <ul>
+                        <li>PC#-XXXXX = DDR# (generation) + XXXXX (max bandwidth MB/s)</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>CAS Latency</h2>
+            <ul>
+                
+                <li>Time it takes before the instruction is sent and the data is retrieved
+                    <ul>
+                        <li>Lower CAS latency = faster response time</li>
+                        <li>Clock speed also matters, not just CAS latency</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2 class="topMargin">Dual-Channel Memory</h2>
+                <p id="2channel">Use matching sticks in 2 specific slots on the motherboard for it to access both modules simultaneously, doubling the bandwidth</p>
+
+            <h2 class="topMargin">Memory Hierarchy (Fastest-Slowest)</h2>
+            <ol>
+                <li>CPU registers</li>
+                <li>Cache (L1, L2 and L3)</li>
+                <li>Main system memory (RAM)</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Storage:</h2>
+            <ul>
+                <li>Uses Flash memory for non volatile information</li>
+                <li>Used in BIOS chips and almost all other set device instructions</li>
+                <li>No need for refreshing, means power can go off and the info stays</li>
+            </ul>
+            <h2 class="topMargin">Storage types</h2>
+            <ul>
+                <li>SSD (Solid State Drive)
+                    <ul>
+                        <li>Uses transistors and charges to store data</li> 
+                    </ul>
+                </li>
+                <li>HDD (Hard Disk Drive)
+                    <ul>
+                        <li>Uses magnetic polarity to store data and sense changes</li>
+                    </ul>
+                </li>
+                <li>Optical Drives
+                    <ul>
+                        <li>Uses lasers to sense reflectivness for pits and lands</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>Mikael Levitan, 2536804, Computer Science and Technology, 420-B, Dawson College</p>
+    </footer>
+
+</body>
