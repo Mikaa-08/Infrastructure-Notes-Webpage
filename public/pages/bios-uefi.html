@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../style/webpage-style.css" rel="stylesheet">
+    <title>BIOS/UEFI</title>
+</head>
+
+<body>
+<header><h1>BIOS/UEFI</h1></header>
+
+<nav class="navBar">
+    <a href="../index.html" class="homePage">Home Page</a>
+    <div class="otherLinks">
+        <a href="computer-definition.html">Definition of a Computer</a>
+        <a href="file-organisation.html">File Organization</a>
+        <a href="search-engines.html">Web Search Engines</a>
+        <a href="boolean-logic.html">Boolean Logic</a>
+        <a href="numbering-systems.html">Numbering Systems</a>
+        <a href="processors.html">Processors</a>
+        <a href="memory-storage.html">Memory and Storage</a>
+        <a href="bios-uefi.html">BIOS/UEFI</a>
+        <a href="operating-systems.html">Operating Systems</a>
+        <a href="git-control.html">Git Control</a>
+        <a href="networks.html">Networks</a>
+        <a href="file-encoding.html">File Encoding</a>
+    </div>
+</nav>
+
+<main>
+
+<article>
+<h2>BIOS (Basic Input/Output System)</h2>
+<ul>
+    <li>Firmware stored on the motherboard in flash memory</li>
+    <li>Runs the POST (Power-On Self Test)</li>
+    <li>Initializes basic hardware</li>
+    <li>Loads the bootloader to start the operating system</li>
+</ul>
+
+<h2 class="topMargin">UEFI (Unified Extensible Firmware Interface)</h2>
+<ul>
+    <li>Modern replacement for BIOS</li>
+    <li>Supports mouse and graphical interfaces</li>
+    <li>Supports large hard drives using GPT</li>
+    <li>Features Secure Boot, faster startup, network capability</li>
+</ul>
+</article>
+
+<article>
+<h2>Boot Process (Startup Sequence)</h2>
+<ol>
+    <li>Power on the computer</li>
+    <li>CPU loads BIOS/UEFI firmware</li>
+    <li>POST (Power On Self Test) checks CPU, RAM, GPU, Motherboard</li>
+    <li>The bootloader is loaded from storage</li>
+    <li>The operating system kernel loads into memory</li>
+    <li>Drivers start and the operating systems becomes available</li>
+</ol>
+
+<h2 class="topMargin">CMOS & Battery</h2>
+<ul>
+    <li>Previously stored BIOS settings, now mostly stored in flash</li>
+    <li>Battery (CR2032) keeps the real-time clock running</li>
+    <li>Battery lasts 3-8 years</li>
+</ul>
+</article>
+
+<article>
+<h2>BIOS Updates (Flashing)</h2>
+<ul>
+    <li>Adds support for new CPUs</li>
+    <li>Patches bugs or security issues</li>
+    <li>Improves compatibility with newer hardware</li>
+    <li>Should only be updated when necessary</li>
+</ul>
+
+<h2 class="topMargin">Boot Problems & Failures</h2>
+<ul>
+    <li>Hardware failure (RAM, CPU, PSU, motherboard)</li>
+    <li>Corrupt bootloader or OS files</li>
+    <li>Incorrect BIOS settings</li>
+    <li>Power problems and forced shutdowns</li>
+</ul>
+
+<h2 class="topMargin">POST Beep Codes</h2>
+<ul>
+    <li>1 short DRAM refresh failure</li>
+    <li>5 short CPU failure</li>
+    <li>8 short Display memory error</li>
+    <li>11 short Cache memory error</li>
+    <li>(Codes vary by manufacturer)</li>
+</ul>
+</article>
+
+</main>
+
+<footer>
+<p>Mikael Levitan, 2536804, Computer Science and Technology, 420-B, Dawson College</p>
+</footer>
+
+</body>
+</html>

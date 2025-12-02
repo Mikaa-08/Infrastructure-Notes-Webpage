@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <link href="../style/webpage-style.css" rel="stylesheet">
+        <title>My Notes on Processors</title>
+    </head>
+
+<body>
+    <header><h1>Processors</h1></header>
+        
+    <nav class="navBar">
+        <a href="../index.html" class="homePage">Home Page</a>
+        <div class="otherLinks">
+            <a href="computer-definition.html">Definition of a Computer</a>
+            <a href="file-organisation.html">File Organization</a>
+            <a href="search-engines.html">Web Search Engines</a>
+            <a href="boolean-logic.html">Boolean Logic</a>
+            <a href="numbering-systems.html">Numbering Systems</a>
+            <a href="">Processors</a>
+            <a href="memory-storage.html">Memory and Storage</a>
+            <a href="bios-uefi.html">BIOS/UEFI</a>
+            <a href="operating-systems.html">Operating Systems</a>
+            <a href="git-control.html">Git Control</a>
+            <a href="networks.html">Networks</a>
+            <a href="file-encoding.html">File Encoding</a>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h2>What is a processor</h2>
+            <ul>
+                <li>CPU (Central Processing Unit): "Brain" of the computer, processes instructions and exectutes them</li>
+                <li>GPU (Graphics Processing Unit): Processes information into graphics to display it</li>
+                <li>Processor speed is measured in GHz, clock speed (Billions of cycles per second), modern CPUs run at 5GHz</li>
+                <li>Main processor manufacturers
+                    <ul>
+                        <li>AMD</li>
+                        <li>Intel</li>
+                        <li>Nvidia</li>
+                        <li>Qualcom</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2 class="topMargin">Types of processors</h2>
+            <ul>
+                <li>CPU:
+                    <ul>
+                        <li>Few powerful cores</li>
+                        <li>Good for general-purpose tasks</li>
+                    </ul>
+                </li>
+                <li>Discrete GPU:
+                    <ul>
+                        <li>Separate card</li>
+                        <li>Has its own VRAM</li>
+                        <li>Needed for gaming, editing, 3D work</li>
+                        <li>Hundreds to thousands of smaller cores</li>
+                        <li>Designed for simultaneous math-heavy tasks</li>
+                    </ul>
+                </li>
+                <li>Integrated GPU (iGPU):
+                    <ul>
+                        <li>Built into CPU, so it shares system RAM</li>
+                        <li>Good for low requirement everyday tasks</li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </article>
+
+        <article>
+            <h2>Core Components of a Core</h2>
+            <ul>
+                <li>Control Unit (CU)
+                    <ul>
+                        <li>Fetches and decodes instructions</li>
+                        <li>Manages communication between ALU, memory, I/O</li>
+                    </ul>
+                </li>
+                <li>Arithmetic Logic Unit (ALU)
+                    <ul>
+                        <li>Performs arithmetic and logic operations</li>
+                        <li>Handles operations like AND, OR, ADD, SUBTRACT</li>
+                    </ul>
+                </li>
+                <li>Registers
+                    <ul>
+                        <li>Very small, extremely fast storage inside CPU</li>
+                        <li>Holds data for immediate use</li>
+                    </ul>
+                </li>
+                <li>Cache
+                    <ul>
+                        <li>High-speed memory inside CPU</li>
+                        <li>Levels: 
+                            <ul>
+                                <li>L1 (smallest, fastest)</li>
+                                <li>L2</li>
+                                <li>L3 (largest, slowest but still very fast)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>CPU Cores</h2>
+            <p>A CPU core contains all of the components, technically making each core it's own chip</p>
+            <p>Numbers of cores on CPUs possible</p>
+            <ul>
+                <li>Dual-Core = 2 Cores</li>
+                <li>Quad-Core = 4 Cores</li>
+                <li>Hexa-Core = 6 Cores</li>
+                <li>Octo-Core = 8 Cores</li>
+                <li>12 Cores</li>
+                <li>16 Cores</li>
+                <li>24 Cores</li>
+            </ul>
+
+        </article>
+
+        <article>
+            <h2>CPU Sockets</h2>
+            <ul>
+                <li>LGA (Intel)
+                    <ul>
+                        <li>Pins on the motherboard, so CPU has flat contacts</li>
+                        <li>Used by most Intel CPUs</li>
+                    </ul>
+                </li>
+                <li>PGA (AMD)
+                    <ul>
+                        <li>Pins on the CPU, so the socket holes are on motherboard, not with AM5</li>
+                    </ul>
+                </li>
+                <li>Circuits of logic gates can math, decision-making, and storing stuff in memory</li>
+            </ul>
+
+            <h2 class="topMargin">Cooling a CPU</h2>
+            <ul>
+                <li>Air cooling (fans + heatsink)
+                    <ul>
+                        <li>Cheap and effective for most CPUs
+                            <ul>
+                                <li>Single-tower coolers (1 heatsink + fans)</li>
+                                <li>Dual-tower coolers (2 heatsinks + fans)</li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </li>
+                <li>Passive cooling (Just a heatsink, no fans)</li>
+                <li>Liquid Cooling
+                    <ul>
+                        <li>Expensive but more effective than otherLinks
+                            <ul>
+                                <li>Tubing through PC (Expensive + Hard to maintain)</li>
+                                <li>AIO (All In One) cooling has fans with a cooling tube</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Instruction Cycle</h2>
+            <ol>
+                <li>Fetch
+                    <ul>
+                        <li>Instruction loaded from memory to IR</li>
+                    </ul>
+                </li>
+                <li>Decode
+                    <ul>
+                        <li>CU interprets instruction</li>
+                    </ul>
+                </li>
+                <li>Execute
+                    <ul>
+                        <li>ALU performs operation</li>
+                    </ul>
+                </li>
+                <li>Store
+                    <ul>
+                        <li>Result stored in register or memory</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h2 class="topMargin">Pipelining</h2>
+            <ul>
+                <li>CPU splits instruction execution into stages</li>
+                <li>Each stage processes a different instruction simultaneously like an assembly line</li>
+                <li>More effective than singhle task computing</li>
+            </ul>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>Mikael Levitan, 2536804, Computer Science and Technology, 420-B, Dawson College</p>
+    </footer>
+
+</body>
